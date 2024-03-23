@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+
+:root { 
+    /* Colors */
+
+    --strong-cyan : hsl(172, 67%, 45%) ; 
+
+    --very-dark-cyan: hsl(183, 100%, 15%) ; 
+    --dark-grayish-cyan: hsl(186, 14%, 43%); 
+    --grayish-cyan : hsl(184, 14%, 56%); 
+    --light-grayish-cyan: hsl(185, 41%, 84%) ;
+    --very-light-grayish-cyan:  hsl(189, 41%, 97%); 
+
+    /* Typography  */
+
+    --fz-form:24px; 
+
+    --ff-space-mono :"Space Mono" , sans-serif ; 
+
+    --fw-bold : 700 ; 
+    
+    /* Borders  */
+
+    --radii : 1rem ; 
+    --radii-small : 0.5rem ; 
+
+}
+
+body{ 
+    margin: 0;
+
+    font-family: var(--ff-space-mono);
+    font-size: 16px;
+    
+    background-color: var(--light-grayish-cyan);
+}
+
+
+.splitter__box{ 
+    min-height: 100vh;
+    max-width: 990px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.splitter__header{ 
+    color : var(--dark-grayish-cyan); 
+    text-transform: uppercase;
+    letter-spacing: 4px;   
+    margin: 0;
+}
+.splitter__header p { 
+    margin: 0;
+}
+
+.splitter__cont{ 
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+
+    padding: 1rem;
+
+    background:white;
+
+    border-radius: var(--radii);
+}
+
+.splitter__bill , .splitter__bill{ 
+
+    display: flex;
+    flex-direction: column;
+
+    width: 100%;    
+
+}
+
+.splitter__section-name { 
+    margin: 0;
+    
+    font-size: 15px;
+    color: var(--dark-grayish-cyan) ; 
+    
+}
+.splitter__input--dollar{ 
+    background: url('./images/icon-dollar.svg'); 
+    
+}
+
+.splitter__input--person{ 
+    background: url('./images/icon-person.svg'); 
+    
+}
+.splitter__input { 
+    
+    padding: 5px;
+
+    border:none ; 
+    border-radius: var(--radii-small);
+
+    
+    background-position: left 5% top 50%;
+    background-repeat: no-repeat;
+    background-color:var(--very-light-grayish-cyan);
+
+    
+    
+    text-align: right;
+    color:var(--very-dark-cyan) ;
+    font-size: var(--fz-form); 
+    font-weight: var(--fw-bold);
+    cursor: pointer;
+}
+
+.splitter__input:focus{ 
+    outline: none;
+
+    border: 1px solid var(--strong-cyan);
+    border-radius: var(--radii-small);
+}
+
