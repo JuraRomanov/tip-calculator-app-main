@@ -78,7 +78,11 @@ body{
 
     border-radius: 1rem 1rem 0 0;
 }
-
+.splitter_section-input{ 
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
 .splitter__bill , .splitter__people{ 
 
     display: flex;
@@ -93,7 +97,17 @@ body{
     
     font-size: 15px;
     color: var(--dark-grayish-cyan) ; 
+    display: flex;
     
+    justify-content: space-between;
+}
+
+.error__message { 
+    color : red ; 
+    
+}
+.error__message--hidden { 
+    display: none;
 }
 .splitter__input--dollar{ 
     background: url('./images/icon-dollar.svg'); 
@@ -120,7 +134,7 @@ body{
     
     padding: 5px;
 
-    border:none ; 
+    border: 1px solid rgba(0, 0, 0, 0);
     border-radius: var(--radii-small);
 
     
@@ -154,6 +168,12 @@ body{
     border: 1px solid var(--strong-cyan);
     border-radius: var(--radii-small);
 }
+
+.splitter__input--error{ 
+    outline: none;
+    border-color: red;
+}
+
 .tip__section-percents{
     display: flex;
     flex-wrap: wrap;    

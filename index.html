@@ -15,14 +15,16 @@
     <div class="splitter__box">
        <h1 class="splitter__header">
               spli <p>tter</p>
+              
        </h1>
        <section class="splitter__cont">
         <div class="splitter_section-input">
           <div class="splitter__bill">
             <h3 class="splitter__section-name">
               Bill
+              <span class="error__message error__message--hidden">Can`t be zero</span>
             </h3>
-            <input type="number" name="bill" id="input--bill" class="splitter__input splitter__input--dollar">
+            <input type="number" name="bill" id="input--bill" class="splitter__input splitter__input--dollar" placeholder="0">
           </div>
   
           <div class="splitter__tip">
@@ -31,12 +33,12 @@
             </h3>
             <div class="tip__section-percents">
   
-              <button class="btn__tip btn__tip--active">5%</button>
+              <button class="btn__tip">5%</button>
               <button class="btn__tip">10%</button>
               <button class="btn__tip">15%</button>
               <button class="btn__tip">25%</button>
               <button class="btn__tip">50%</button>
-              <input type="number" name="procent" id="tip__custom" class="splitter__input splitter__input--custom" placeholder="Custom">
+              <input type="number" name="procent" id="input--custom" class="splitter__input splitter__input--custom " placeholder="Custom">
   
             </div>
           </div>
@@ -44,8 +46,9 @@
           <div class="splitter__people">
             <h3 class="splitter__section-name">
               Number of People
+              <span class="error__message error__message--hidden">Can`t be zero</span>
             </h3>
-            <input type="number" name="number-of-person" id="input--persons" class="splitter__input splitter__input--person">
+            <input type="number" name="number-of-person" id="input--persons" class="splitter__input splitter__input--person" placeholder="0">
           </div>
         </div>
 
@@ -56,7 +59,7 @@
                 <h4 class="results__title">Tip Amount</h4>
                 <span class="results__subtitle">/ person</span>
               </div>
-              <span class="results__money">$4.27</span>
+              <span class="results__money" id="tip__amount">$0.00</span>
             </div>
             
             <div class="results__box">
@@ -64,7 +67,7 @@
                 <h4 class="results__title">Total</h4>
                 <span class="results__subtitle">/ person</span>
               </div>
-              <span class="results__money">$32.79</span>
+              <span class="results__money" id="tip__total">$0.00</span>
             </div>
           </div>
         
@@ -78,6 +81,6 @@
 
   </div>
   
-  
+  <script src="./main.js"></script>
 </body>
 </html>
