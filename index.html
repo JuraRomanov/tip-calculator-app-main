@@ -17,53 +17,60 @@
               spli <p>tter</p>
        </h1>
        <section class="splitter__cont">
-        <div class="splitter__bill">
-          <h3 class="splitter__section-name">
-            Bill
-          </h3>
-          <input type="number" name="bill" id="input--bill" class="splitter__input splitter__input--dollar">
-        </div>
-
-        <div class="splitter__tip">
-          <h3 class="splitter__section-name">
-            Select Tip %
-          </h3>
-          <div class="tip__section-percents">
-            <button class="tip__btn">5%</button>
-            <button class="tip__btn">10%</button>
-            <button class="tip__btn">15%</button>
-            <button class="tip__btn">25%</button>
-            <button class="tip__btn">50%</button>
-            
-            <input type="number" name="procent" id="tip__custom" class="splitter__input" placeholder="Custom">
+        <div class="splitter_section-input">
+          <div class="splitter__bill">
+            <h3 class="splitter__section-name">
+              Bill
+            </h3>
+            <input type="number" name="bill" id="input--bill" class="splitter__input splitter__input--dollar">
           </div>
-        </div>
-
-        <div class="splitter__bill">
-          <h3 class="splitter__section-name">
-            Number of People
-          </h3>
-          <input type="number" name="number-of-person" id="input--persons" class="splitter__input splitter__input--person">
+  
+          <div class="splitter__tip">
+            <h3 class="splitter__section-name">
+              Select Tip %
+            </h3>
+            <div class="tip__section-percents">
+  
+              <button class="btn__tip btn__tip--active">5%</button>
+              <button class="btn__tip">10%</button>
+              <button class="btn__tip">15%</button>
+              <button class="btn__tip">25%</button>
+              <button class="btn__tip">50%</button>
+              <input type="number" name="procent" id="tip__custom" class="splitter__input splitter__input--custom" placeholder="Custom">
+  
+            </div>
+          </div>
+  
+          <div class="splitter__people">
+            <h3 class="splitter__section-name">
+              Number of People
+            </h3>
+            <input type="number" name="number-of-person" id="input--persons" class="splitter__input splitter__input--person">
+          </div>
         </div>
 
         <div class="splitter__results">
-          <div class="results__box">
-            <div class="results__section-title">
-              <h4 class="results__title">Tip Amount</h4>
-              <span class="results__subtitle">/ person</span>
+          <div class="results__section">
+            <div class="results__box">
+              <div class="results__section-title">
+                <h4 class="results__title">Tip Amount</h4>
+                <span class="results__subtitle">/ person</span>
+              </div>
+              <span class="results__money">$4.27</span>
             </div>
-            <span class="results__money">$4.27</span>
-          </div>
-          
-          <div class="results__box">
-            <div class="results__section-title">
-              <h4 class="results__title">Total</h4>
-              <span class="results__subtitle">/ person</span>
+            
+            <div class="results__box">
+              <div class="results__section-title">
+                <h4 class="results__title">Total</h4>
+                <span class="results__subtitle">/ person</span>
+              </div>
+              <span class="results__money">$32.79</span>
             </div>
-            <span class="results__money">$32.79</span>
           </div>
         
-
+          <button class="btn__reset">reset </button>
+            
+         
         </div>
 
        </section>
